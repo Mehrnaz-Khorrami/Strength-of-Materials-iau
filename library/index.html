@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        * {
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Thin.woff2") format("woff2");
+                font-weight: 100;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-ExtraLight.woff2") format("woff2");
+                font-weight: 200;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Light.woff2") format("woff2");
+                font-weight: 300;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Regular.woff2") format("woff2");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Medium.woff2") format("woff2");
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-SemiBold.woff2") format("woff2");
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Bold.woff2") format("woff2");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-ExtraBold.woff2") format("woff2");
+                font-weight: 800;
+                font-style: normal;
+                font-display: swap;
+            }
+
+            @font-face {
+                font-family: Vazirmatn;
+                src: url("/font/Vazirmatn-Black.woff2") format("woff2");
+                font-weight: 900;
+                font-style: normal;
+                font-display: swap;
+            }
+        }
+
+        * {
+            font-family: Vazirmatn;
+            direction: rtl;
+
+        }
+
+        .inTheNameOfGod-img {
+            width: 400px;
+        }
+
+        .users {
+            font-size: 20px;
+        }
+
+        .div-title-page {
+            text-align: center;
+        }
+
+        .firstpage-img {
+
+            width: 850px;
+            height: 1050px;
+        }
+
+        .headers {
+            background-color: #0072bc;
+            color: white;
+            padding-right: 30px;
+        }
+
+        .fontsize {
+            font-size: 14px;
+        }
+
+        .page1 {
+            padding: 0px 50px;
+            margin-top: -10px;
+        }
+
+        .page1-subtitle {
+            color: red;
+        }
+
+        .top-page {
+            margin-top: -20px;
+            margin-bottom: -20px;
+        }
+
+        .stars {
+            color: #ee1d23;
+        }
+
+        .h4-title {
+            color: #281d57;
+        }
+
+        .page1-img {
+            margin-top: 40px;
+            margin-right: -90px;
+            width: 800px;
+            height: 680px;
+        }
+
+        .page2-img {
+            margin-right: -30px;
+            width: 700px;
+            height: 950px;
+        }
+
+        .page3-img {
+            margin-top: 40px;
+            width: 710px;
+            height: 760px;
+            margin-right: -50px;
+        }
+
+        .page4-img {
+            /* margin-top: 40px; */
+            height: 700px;
+            width: 700px;
+            margin-right: -30px;
+        }
+
+        .notes {
+            font-size: 10px;
+            font-weight: light;
+            margin-top: -5px;
+        }
+
+        .page4-blue-subtitle {
+            margin-top: -15px;
+            color: #0072bc;
+        }
+
+        .page5-img {
+            margin-right: -100px;
+            width: 860px;
+            height: 840px;
+        }
+
+        .page6-img {
+            margin-right: -70px;
+            width: 790px;
+            height: 970px;
+        }
+
+        .div-page7-flex {
+            display: flex;
+            justify-content: space-between
+        }
+
+        .title-text-page7 {
+            color: #2e3092;
+        }
+
+        .page7-img {
+            /* margin-left: -70px; */
+            width: 300px;
+            height: 1010px;
+        }
+
+        .title-page7 {
+            margin-top: -10px;
+        }
+
+        #title-page7 {
+            margin-top: -10px;
+        }
+
+        .text-page7 {
+            font-size: 10px;
+            margin-top: -20px;
+        }
+
+        .seconed-title-page7 {
+            margin-top: -8px;
+        }
+
+        .squeare {
+            color: #0072bc;
+            font-size: 24px;
+        }
+
+        .blue-title-text-page7 {
+            color: #231d57;
+        }
+
+        .text-div-flex {
+            display: flex;
+        }
+
+        .p-text {
+            /* margin-top: -2px; */
+            font-size: 10px;
+            margin-right: 3px;
+        }
+
+        .top-table {
+            margin-right: -30px;
+        }
+
+        #customers {
+            border-collapse: collapse;
+            width: 449px;
+            margin-right: -58px;
+            margin-top: -20px;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid black;
+            padding: 0px 3px;
+            font-size: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #e1e9f6;
+        }
+
+        #final-table {
+            border-collapse: collapse;
+            width: 449px;
+            margin-right: -58px;
+            margin-top: -20px;
+        }
+
+        #final-table td,
+        #final-table th {
+            border: 1px solid black;
+            padding: 0px 3px;
+            font-size: 8px;
+        }
+
+        .purpale {
+            background-color: #adc4e5;
+        }
+
+        #models {
+            border-collapse: collapse;
+            width: 449px;
+            margin-right: -58px;
+            margin-top: -20px;
+        }
+
+        #models td,
+        #models th {
+            border: 1px solid black;
+            padding: 0px 3px;
+            font-size: 8px;
+        }
+
+        #models tr:nth-child(even) {
+            background-color: #e1e9f6;
+        }
+
+        .light-purpale {
+            background-color: #e1e9f6;
+        }
+
+        .page8-img {
+            /* margin-top: -20px; */
+            margin-right: -60px;
+            width: 790px;
+            height: 1000px;
+        }
+
+        .blue-stars {
+            color: #0072bc;
+            font-size: 14px
+        }
+
+        .page8-note {
+            font-weight: 200;
+            margin-top: -20px;
+            margin-right: 30px;
+            font-size: 14px;
+        }
+
+        .blue-circle {
+            color: #0072bc;
+        }
+
+        .red-lozy {
+            color: red;
+        }
+
+        .dark-blue-page9 {
+            color: #231d57;
+        }
+
+        .page9-subtitle {
+            margin-right: -40px;
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        .distanse-page9 {
+            margin-top: -12px;
+            font-size: 12px;
+        }
+        .moreTop{
+            /* margin-bottom: 0px; */
+        }
+        .text-page9 {
+            font-size: 12px;
+            margin-top: -15px;
+            line-height: 1.2;
+        }
+        .smallfont{
+            font-size: 12px;
+        }
+        .text5-page9 {
+            margin-top: -12px;
+            line-height: 1.2;
+        }
+        .div-apge9-flex{
+            display: flex;
+        }
+        .page9-right{
+            margin-right: -40px;
+        }
+        .page9-img {
+            margin-left: -100px;
+            width: 300px;
+            height: 1000px;
+        }
+    </style>
+</head>
+
+<html>
+<div class="main">
+    <!-- title page -->
+    <div class="div-title-page">
+        <img src="/public/img/inTheNameOfGod.jpg" class="inTheNameOfGod-img">
+        <h1>استاد محترم:</h1>
+        <h3 class="users">رضا شاه سیاه</ا>
+            <h1>گردآورندگان:</h1>
+            <p class="users">مهرناز خرمی</p>
+            <p class="users">حسین رامی</p>
+            <p class="users">ایمان سلگی</p>
+            <p class="users">حسین اشرفی</p>
+            <p class="users">دانیال محمودی</p>
+            <p class="users">آرن باغداساریان</p>
+            <p class="users">امیرسینا غیاث یگانه</p>
+            <p class="users">امیرعلی آدیگوزل پور اردبیل</p>
+    </div>
+    <!-- first page -->
+
+    <div class="div-first">
+        <img src="/public/img/firstpage.png" class="firstpage-img">
+    </div>
+
+    <!-- page 1 -->
+    <div class="div-page1">
+        <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+        <div class="page1 fontsize">
+            <h3 class="page1-subtitle">
+                ماشین تست رومیزی جدید با دقت بالا، عملکرد بالا و کاربری ساده
+            </h3>
+            <div class="top-page">
+                <h4 class="h4-title"><span class="stars">★</span> دقت بالا</h4>
+                <p class="top-page">
+                    دقت ±1% از مقدار نشان داده شده از 1/1 تا 1/1000 ظرفیت بار سلول لود
+                    را داراست. دقت ±0.5% (کلاس 0.5) نیز به عنوان گزینه در دسترس است.
+                    (سرعت حرکت از 0.005 میلی‌متر در دقیقه تا 100 میلی‌متر در دقیقه
+                    (TGI-500kN تا TGI-2500kN: 0.005 میلی‌متر در دقیقه تا 500 میلی‌متر
+                    در دقیقه)). دقت سرعت ±0.1% از سرعت تنظیم شده در محدوده سرعت کلی را
+                    فراهم می‌کند.
+                </p>
+                <h4 class="h4-title">
+                    <span class="stars">★</span> عملکرد بالا و کاربری ساده
+                </h4>
+                <p class="top-page">
+                    این دستگاه امکان تنظیم خودکار فاصله سلول لود، تنظیم خودکار فشار،
+                    بازگشت خودکار به موقعیت شروع تست (بدون اضافه‌بار)، ثبت شرایط تست،
+                    تنظیم سرعت سه‌سطحی دستی، نمایش آنالوگ نیروی تست و موقعیت، و
+                    پشتیبانی از تست‌های تکراری کشش و فشرده‌سازی مداوم را دارد.
+                </p>
+                <h4 class="h4-title">
+                    <span class="stars">★</span> دقت افزایش‌یافته، با وضوح موتور سروو
+                    بیش از چهار برابر مدل‌های قبلی
+                </h4>
+                <p class="top-page">
+                    کنترل موقعیت به طور چشمگیری بهبود یافته است و امکان کارکرد ایمن در
+                    محدوده‌های سرعت کم را فراهم می‌کند.
+                </p>
+                <h4 class="h4-title">
+                    <span class="stars">★</span> سرعت بازگشت افزایش‌ یافته
+                </h4>
+                <p class="top-page">
+                    سرعت بازگشت می‌تواند بین 0.1 میلی‌متر در دقیقه و 1500 میلی‌متر در
+                    دقیقه (تا 10 کیلو نیوتن) و بین 0.1 میلی‌متر در دقیقه و 750
+                    میلی‌متر در دقیقه (برای 50 کیلو نیوتن و بیشتر) تنظیم شود.
+                </p>
+                <div>
+                    <img src="/public/img/page1.png" class="page1-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- page 2 -->
+    <div class="div-page1">
+        <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+        <div class="page1 fontsize">
+            <div>
+
+                <img src="/public/img/page2.png" class="page2-img">
+            </div>
+            <p class="notes">
+                نکته1: محدوده اندازه گیری نیروی آزمایش بسته به ظرفیت نامی لودسل مورد استفاده متفاوت است. <br>
+                نکته2: دستگاه های تست با عرض موثر بزرگ در دسترس هستند. <br>
+                نکته3: مدل‌ها با ضربه‌ی گسترده در دسترس هستند <br>
+                نکته4: طول ضربه کششی نشان می‌دهد که زمان نصب سلول باری که می‌تواند نیروی آزمایش حداکثر را تشخیص دهد
+                و چاک آزمایش را تست کند
+            </p>
+        </div>
+    </div>
+    <!-- page 3 -->
+    <div class="div-page3">
+        <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+        <div class="page3 page1 fontsize">
+            <h3 class="page1-subtitle">
+                تست دستگاه روی میز با دقت بالا،عملکرد بالا و کنترل و عملیات ساده
+            </h3>
+            <div class="top-page">
+                <h4 class="h4-title"><span class="stars">★</span> دقت بالا</h4>
+                <p class="top-page">قت ۱+٪(jisclass) از مقدار نشان داده شده از ۱/۱ تا 500/1 مقدار ظرفیت سلول از
+                    (jisclass) به عنوان یک گزینه موجود است محدوده سرعت از 1/0mm/mim تا ۵۰۰mm/min دقت سرعت از ٪5/0+ و
+                    تننظیم سرعت از 0025/0mm/min هر کدام که بزرگتر است
+                </p>
+                <h4 class="h4-title">
+                    <span class="stars">★</span> عملکرد بالا و کاربری ساده
+                </h4>
+                <p class="top-page">تنظیم خودکار دهانه سلول بار یک فشار خودکار صفر ،بازگشت خودکار موقعیت شروع
+                    آزمایش( بدون بیش از حد )ثبت نام شرایط آزمون ،تنظیم دستی سه مرحله‌ای سرعت(قابل تنظیم آزادانه)،
+                    خروجی آنالوگ نیروی آزمایش و موقعیت آن و پشتیبانی از آزمایش مکرر کششی و فشاری
+                </p>
+                <h4 class="h4-title">
+                    <span class="stars">★</span> سبک وزن و فشرده
+                </h4>
+                <p class="top-page">۵٠ کیلوگرم سبک تر و ١٠٠میلی متر باریک تر از مدل قبلی
+                    مدل (مقایسه)شده با TG-10KN
+
+                </p>
+                <div>
+                    <img src="/public/img/page 3.png" class="page3-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- page 4 -->
+        <div class="div-page4">
+            <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+            <div class="page3 page1 fontsize">
+                <p>
+                    <span class="stars">★</span>
+                    اندازه گیری نیروی آزمونمحدوده از X 1 تا X 100 است، که برنامه های کاربردی از نیروهای تست
+                    میکروسکوپی تا نیروهای آزمایش بزرگ را قادر
+                    می سازد با استفاده از یک لودسل واحد پوشش داده شوند. <br> آزمایش از محدوده مربوطه استفاده می کند
+                    به نیروی آزمایش، حذف تنظیمات محدوده مشکل ساز.(بدون محدوده بین X 1 وxS0)
+
+                </p>
+                <p class="top-page">
+                    <span class="stars">★</span> سروو موتورهای AC با کارایی بالا برای اطمینان از پایداری بالا در طیف
+                    وسیعی از سرعت ها از 0.1 میلی متر در دقیقه تا 500 میلی متر در دقیقه استفاده می شود.
+                </p>
+                <p>
+                    <span class="stars">★</span> خروجی آنالوگ به صورت استاندارد ارائه می شود برای نیروی آزمایش و
+                    موقعیت (جابجایی). یک تابع مقیاس بندی گنجانده شده است که ضبط را ساده می کند با ضبط یا دیتالاگر.
+                </p>
+                <p class="top-page">
+                    <span class="stars">★</span> انتخاب سرعت دستی (H/M/L) ارائه شده استبرای تنظیم آسان موقعیت قبل از
+                    آزمایش. هر سرعت را می توان به دلخواه تنظیم کرد.
+                </p>
+                <p>
+                    <span class="stars">★</span> ایک رابط کامپیوتری به عنوان استاندارد گنجانده شده است و عملکرد آسان
+                    و طیف کاملی از پردازش داده با عملکرد بالا را ارائه می دهد نرم افزار. (اختیاری)
+                </p>
+                <p class="top-page">
+                    <span class="stars">★</span> stroke متحرک cro5shead ha5 تا حد زیادی گسترش یافته است و امکان
+                    استفاده از نمونه های آزمایشی طولانی را فراهم می کند.
+                </p>
+                <div>
+                    <img src="/public/img/page4.png" class="page4-img">
+                </div>
+                <p class="notes">
+                    نکته1: اندازه گیری نیروی آزمون محدوده بسته به ظرفیت نامی لودسل مورد استفاده متفاوت است. <br>
+                    نکته2: ماشین های تست با عرض موثر زیاد برای مدل هایی با حداکثر نیروی آزمایش 30 کیلو نیوتن، 100
+                    کیلو نیوتن یا 230 کیلو نیوتن موجود است. <br>
+                    نکته3: مدل های با سکته ی طولانی در دسترس هستند. <br>
+                    نکته4: طول ضربه کششی نشان‌دهنده زمانی است که یک لودسل نصب می‌شود که می‌تواند حداکثر نیروی تست و
+                    چاک آزمایش را تشخیص دهد.
+                </p>
+
+            </div>
+        </div>
+
+        <!-- page 5 -->
+        <div class="div-page5">
+            <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+            <div class="page3 page1 fontsize">
+                <h3 class="page1-subtitle">
+                    ماشین جامع آزمایش با دقت بهسازی شده و کارایی ساده
+                </h3>
+                <h3 class="page4-blue-subtitle">عملکرد متعدد و دقت بالا تلفیق شده
+                    با روند‌های راه‌اندازی ساده برای ارتقاء بازده آزمایش
+
+                </h3>
+                <div class="top-page">
+                    <p>
+                        <span class="stars">★</span>
+                        قابل استفاده برای انجام آزمایش‌های کششی و فشاری پیوسته.
+
+                    </p>
+                    <p class="top-page">
+                        <span class="stars">★</span>
+                        مجهز به ده مدل در دسترس (200 N, 500 N, 1 kN, 2 kN, 5 kN, 10 kN, 20 kN, 50 kN, 100 kN, 250 kN)
+                        جهت سازگاری با درخواست نیروی آزمایش.
+
+                    </p>
+                    <p>
+                        <span class="stars">★</span>
+                        تابلو تنظیم جلویی طوری تنظیم شده تا همه‌ی نمایشگرها و کلیدها جهت سهولت کار یکجا باشند.
+
+                    </p>
+                    <p class="top-page">
+                        <span class="stars">★</span>
+                        به سادگی سنسور وزن را با کالیبراسیون و عملگر‌های صفر کننده خودکار، بدون نیاز به تغییرات، متصل
+                        کنید.
+
+                    </p>
+                    <p>
+                        <span class="stars">★</span>
+                        پشتیبانی از دقت 1%± (JIS Class1) یا 0.5%± (JIS Class0.5) در محدوده ظرفیت بار.
+
+                    </p>
+                    <p class="top-page">
+                        <span class="stars">★</span>
+                        دارای سه سرعت دستی جهت تنظیم موقعیت قبل از آزمایش.
+
+                    </p>
+                    <p>
+                        <span class="stars">★</span>
+                        طراحی جمع و جور و سبک، موجب رفع محدودیت‌ها در محل نصب می‌گردد.
+
+                    </p>
+                    <div>
+                        <img src="/public/img/page5.png" class="page5-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page 6 -->
+        <div class="div-page8">
+            <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+            <div class="page3 page1 fontsize">
+                <img src="/public//img/page6.png" class="page6-img">
+            </div>
+            <p class="notes">
+                نکته 1: محدوده اندازه گیری نیرو ی آزمایش بسته به ظرفیت نامی لودسل مورد استفاده متفاو ت است. <br>
+                نکته 2: دستگاه های تست با عرض موثر زیاد موجود هستند. <br>
+                نکته 3: مدل‌ها با حرکت گسترده موجود هستند. <br>
+                نکته 4: ضربه تست کششی برای حداکثر ظرفیت نیرو ی آزمایشی لودسل با چاک (اختیاری) نصب شده. <br>
+                نکته5: برای آزمایش چرخشی، سرعت متناوب را بیش از 5 چرخه در دقیقه استفاده نکنید.
+            </p>
+        </div>
+        <!-- page 7 -->
+        <div class="div-page7">
+            <h2 class="headers">پایه تست بار سری LTS-B</h2>
+            <div class="page3 page1 fontsize">
+                <h3 class="page1-subtitle">با ویژگی‌های مهره‌های توپی و مطابقت با استاندارد JIS B 7721
+                </h3>
+                <div class="div-page7-flex">
+                    <div>
+                        <div class="top-table">
+                            <h4 id="title-page7"> <span class="stars">★</span><span class="title-text-page7">آزمایش قدرت
+                                    با عملیات ساده</span></h4>
+                            <h4 class="title-page7"> <span class="stars">★</span><span class="title-text-page7">آزمایش
+                                    کششی/فشاری/انعطافی</span></h4>
+                            <p class="text-page7">قدرت باز کردن کیسه، مقاومت چسب، مقاومت پوسته، مقاومت چسبندگی، مقاومت
+                                کششی فیلم، اندازه‌گیری نیروی استخراج قطعات فشاری و ریوت شده، اندازه‌گیری مقاومت خمشی
+                                مواد و محصولات
+                                برای اندازه‌گیری جابجایی از یک کدگذار استفاده می‌شود و جابجایی را با دقت 001 میلی‌متر
+                                اندازه‌گیری می‌کند</p>
+                            <h4 class="title-page7"> <span class="stars">★</span><span class="title-text-page7">طراحی
+                                    چرخشی</span></h4>
+                            <p class="text-page7">نمایش دیجیتال برجسته، قرارگیری آسان کلیدها و فضای کافی برای نمونه‌ها
+                                و قالب‌ها</p>
+                            <h4 class="title-page7"> <span class="stars">★</span><span class="title-text-page7">تمامی
+                                    امکانات مناسب و دستگاه‌های ایمنی</span></h4>
+                            <p class="text-page7">تابع معکوس خودکار (تنظیم شده توسط نیروی آزمایش یا جابجایی)، تابع
+                                تشخیص نقطه بالایی، تابع صفر خودکار نیروی آزمایش، انتخاب محدوده نمایش نیروی آزمایش (×1 تا
+                                ×10)، ثبت سلول بار، تشخیص شکست نمونه، تابع رابط (مطابق با USB 20/11)، تابع جلوگیری از
+                                بارزایی، سلول بار، نرم‌افزار جمع‌آوری داده، کابل رابط به عنوان استاندارد ارائه می‌شود
+                            </p>
+                            <div class="text-div-flex">
+                                <h4 class="title-page7"> <span class="squeare">■</span><span
+                                        class="blue-title-text-page7">مشخصات محصول</span></h4>
+                                <p class="p-text">ارقام در براکت مربع برای مدل سکته مغزی طولانی است.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <table id="customers">
+                                <tr>
+                                    <td class="purpale">بار آزمایش حداکثری</td>
+                                    <td>50 N / 200 N / 500 N / 1kN</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">ضربه‌ی سر متحرک</td>
+                                    <td>20 ~ 310 mm [20 ~ 460 mm] بین سه نظام ها
+                                        (با بار استاندارد LTTU-200N ارائه شده و اختیاری PCH-500N-012 سه نظام)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">دامنه سرعت سربال قابل حرکت</td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・سرعت ازمون استاندارد</td>
+                                    <td>روش انتخاب: جدول انتخاب سرعت را مشاهده کنید</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・سرعت بازگشت</td>
+                                    <td>تست سرعت یا بازگشت سریع (انتخاب حداکثر سرعت)، با عملکرد بدون افت‌شدت</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">سرعت دقت</td>
+                                    <td>تنظیم سرعت ±3% (بدون بار)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">اندازه گیری جابجایی
+                                        وضوح</td>
+                                    <td>0.01 میلی‌متر</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">اندازه‌گیری نیروی آزمایشی</td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・تست نمایش نیرو</td>
+                                    <td>رنج 1: ー50.00 ~ 50.00 / -200.0 ~ 200.0 / ー500.0 ~ 500.0 / ー1 000.0 ~ 1 000.0
+                                        محدوده 10: ー5.000 ~ 5.000 /-20.00 ~ 20.00 / ー50.00 ~ 50.00 / 100.00 ~ 100.00
+                                        صفحه نمایش دیجیتال 5 رقمی</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・دقت اندازه‌گیری</td>
+                                    <td>خطای خواندن نسبی ±10٪ (معادل کلاس 1 JIS B 7721)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・تابع تشخیص اوج</td>
+                                    <td>تهیه شده</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・صفر خودکار</td>
+                                    <td>تنظیم خودکار نقطه صفر با استفاده از کلید [ZERO]</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・خروجی آنالوگ</td>
+                                    <td>5 ولت تا منفی 5 ولت مستقیم (اتصال خروجی: انثی BNC)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">وسایل ایمنی</td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">پیشگیری بیش از حد
+                                        سوئیچ محدود</td>
+                                    <td>توقف حرکت متحرک در طول عملیات
+                                        حدود بالا / پایین برای محدوده حرکت متحرک قابل تنظیم است</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・سوئیچ توقف اضطراری</td>
+                                    <td>قطع کلیه برق هنگام عملکرد</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">・پیشگیری از بارزایی</td>
+                                    <td>توقف متحرک میله‌ی متحرک را زمانی که نیروی آزمایشی به 102٪ از ظرفیت مقدار
+                                        نیروسلول می‌رسد</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">تابع رابط (پورت اتصال USB)</td>
+                                    <td>قابلیت USB20 دارد؛ همچنین می‌توان از دستگاه‌های استاندارد USB11 نیز استفاده کرد
+                                        (نوع موصل B ماده)؛ چرخه‌های ارتباطی: ۲۰ بار در ثانیه</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">ابعاد خارجی (عرض × ارتفاع × عمق) (میلی‌متر)</td>
+                                    <td>475×710×347 [475×860×347]</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">وزن</td>
+                                    <td>تقریباً 18 کیلوگرم (تقریباً 19 کیلوگرم برای مدل با حرکت بلند)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">ولتاژ تامین توان، فرکانس، مصرف توان</td>
+                                    <td>100 ولت AC تک فاز ±10 ولت، 50/60 هرتز، 300 وات</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">دامنه دما / رطوبت عملیاتی</td>
+                                    <td>دمای 5 درجه سلسیوس تا 40 درجه سلسیوس؛ رطوبت 20 درصد تا 80 درصد (بدون ترقیق)</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="purpale">تجهیزات استاندارد</td>
+                                    <td>لودسل (یکی از 50 نیوتن، 200 نیوتن، 500 نیوتن یا 1 کیلونیوتن را انتخاب کنید)،
+                                        کابل تامین برق 100 ولت AC (با آداپتور 2 پین، طول 24 متر)، فیوز کوچک (5 آمپر)،
+                                        کابل رابط USB (2 متر)، دفترچه راهنما (1 نسخه)، نرم‌افزار جمع‌آوری داده (1 CD-ROM
+                                        شامل درایور USB)</td>
+
+                                </tr>
+                            </table>
+                        </div>
+                        <h4 class="seconed-title-page7"> <span class="squeare">■</span><span
+                                class="blue-title-text-page7">نرم‌افزار جمع‌آوری داده‌ها (به عنوان استاندارد درج شده
+                                است)</span></h4>
+                        <div>
+                            <table id="models">
+                                <tr>
+                                    <td class="light-purpale">مدل</td>
+                                    <td>LTSD-02</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="light-purpale">نیازمندی‌های سیستمی</td>
+                                    <td>سیستم عامل: ویندوز ویستا، ویندوز 7، ویندوز 10 32/64 بیت
+                                        حافظه اصلی: 2 گیگابایت یا بیشتر با پورت USB</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="light-purpale">محاسبات</td>
+                                    <td>نیروی آزمایش اوج و جابجایی، نیروی آزمایش شکست و جابجایی (تا 1000 آزمون مداوم)
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td class="light-purpale">چاپ کردن</td>
+                                    <td>چاپ نمودن نمودار نیرو/جابجایی (با مقیاس‌بندی خودکار) و نتایج آزمایش برای هر
+                                        آزمون</td>
+
+                                </tr>
+                                <tr>
+                                    <td class="light-purpale">ذخیره‌سازی توابع</td>
+                                    <td>شرایط آزمایش، نتایج آزمایش، داده‌های نیرو/جابجایی آزمایش</td>
+
+                                </tr>
+
+                            </table>
+                        </div>
+                        <h4 class="seconed-title-page7"> <span class="squeare">■</span><span
+                                class="blue-title-text-page7">جدول انتخاب سرعت‌ها</span>
+                        </h4>
+                        <div>
+                            <table id="customers">
+                                <tr>
+                                    <th class="purpale">مدل</th>
+                                    <th class="purpale">سرعت (میلی‌متر/دقیقه)</th>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S500, LTS-200NB-S500, LTS-500NB-S500</td>
+                                    <td>50, 100, 200, 300, 400, 500</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S400, LTS-200NB-S400, LTS-500NB-S400</td>
+                                    <td>40, 75, 100, 200, 300, 400</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S300, LTS-200NB-S300, LTS-500NB-S300, LTS-1kNB-S300</td>
+                                    <td>30, 50, 100, 150, 200, 300</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S300, LTS-200NB-S300, LTS-500NB-S200, LTS-1kNB-S200</td>
+                                    <td>15, 20, 50, 100, 150, 200</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S100, LTS-200NB-S100, LTS-500NB-S100, LTS-1kNB-S100</td>
+                                    <td>10, 20, 30, 50, 75, 100</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S50, LTS-200NB-S50, LTS-500NB-S50, LTS-1kNB-S50</td>
+                                    <td>5, 10, 20, 30, 40, 50</td>
+                                </tr>
+                                <tr>
+                                    <td>LTS-50NB-S20, LTS-200NB-S20, LTS-500NB-S20, LTS-1kNB-S20</td>
+                                    <td>1.5, 2, 5, 10, 15, 20</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <h4 class="seconed-title-page7"> <span class="squeare">■</span><span
+                                class="blue-title-text-page7">نرم‌افزار تجزیه و تحلیل (اختیاری)</span>
+                        </h4>
+                        <div>
+                            <table id="final-table">
+                                <tr>
+                                    <td>نرم‌افزار آزمایش تنش/فشار/خمش</td>
+                                    <td>SR-09-001</td>
+                                </tr>
+                                <tr>
+                                    <td>برنامه‌ی آزمایش پوست‌گیری</td>
+                                    <td>SR-09-002</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/public/img/page7.png" class="page7-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- page 8  -->
+        <div class="div-page8">
+            <h2 class="headers">تکنوگراف سری TGEمشخصات محصول</h2>
+            <div class="page3 page1 fontsize">
+                <img src="/public//img/page8.png" class="page8-img">
+            </div>
+            <p class="notes page8-note">
+                <span class="blue-stars">★</span>
+                سایر ابزارهای آزمایشی می‌توانند برای تطابق با نیازهای آزمایشی مشتری سفارش داده شوند.
+            </p>
+        </div>
+
+        <!-- page 9 -->
+        <div class="div-page8">
+            <h2 class="headers">نرم‌افزار پردازش داده‌های TgAnest برای سری تکنو گراف TGI/TGE/TGJ</h2>
+            <div class="page3 page1 fontsize">
+                <h3 class="page9-subtitle">
+                    نرم‌افزار پردازش داده
+                </h3>
+                <div class="div-apge9-flex">
+                    <div class="page9-right">
+                    <h4 class="distanse-page9"><span class="blue-circle">●</span><span
+                            class="dark-blue-page9">امکانات</span></h4>
+                    <h4 class="distanse-page9 moreTop"><span class="red-lozy">◆</span><span>ایجاد شرایط آزمون را آسان تر
+                            می‌کند</span></h4>
+                    <p class="text-page9 ">تنظیمات بصرى با استفاده از نمايشگر كرافيكى و ديد بهبود يافته با متن در اندازه
+                        بزرك
+                        ورودى ابعاد نمونه آزمايشى همچنين از ورودى دستى، وارد كردن اكسل وورودى ميكرومتر الكترونيكى
+                        پشتیبانی می كند.</p>
+
+                    <h4 class="distanse-page9 moreTop"><span class="red-lozy">◆</span><span>عملكردشروع سريع (30 شرايط)</span>
+                    </h4>
+                    <p class=" text-page9 ">ثبت شرایط أزمايشى كه اغلب استفاده میشود به شما امكان مى دهد تنها با يك كليك
+                        به صفحه شروع
+                        ازمون برويد.</p>
+
+                    <h4 class="distanse-page9 moreTop"><span class="red-lozy">◆</span><span>عملکرد ایجاد گزارش بهبود یافته
+                            است</span></h4>
+                    <p class=" text-page9">اجازه میدهد تا عناوين، شرايط آزمون، نمونه هاى آزمايشى، نمودارها (2 نوع)،
+                        نتايج، نظرات
+                        وعكس ها درهر مكانى با هر اندازه اى براى ايجاد گزارش چسبانده شوند.</p>
+
+                    <h4 class="distanse-page9 text-page9 moreTop"><span class="red-lozy">◆</span><span>سرعت نمونه بردارى وسرعت تست را مى
+                            توان در طول آزمايش در
+                            حالت نمونه
+                            بردارى استاندارد تا چهار مرحله تغيير داد.</span></h4>
+                    <p class="text-page9">
+                        سرعت نمونه برداري:مى تواند بين 10 میلى ثانيه 500 ميلى ثانيه براى (TG)و 10 ساعت در فواصل 10 ميلى
+                        ثانيه تنظيم شود.
+                        * حداقل فاصله زمانى 30 ميلى تانيه براى TGI/TGE هنگام استفاده از رابط USB است، جابجائى: مى تواند
+                        بين
+                        0.001ميلى متر تا 1000.000 ميلي متر در فواصل 0.001 ميلى متر تنظيم شود. ( میتوان بين 0.01 ميلى متر
+                        1000.00g ميلى متر در فواصل 0.01 ميلي متر براى TGE/TGJ تنظيم كرد)</p>
+
+                    <h4 class="distanse-page9 moreTop"><span class="red-lozy">◆</span><span>بانمونه بردارى با سرعت بالا
+                            (اختياری)، این می تواند تا سه
+                            مرحله در طول
+                            آزمايش تغيير كند.</span></h4>
+                    <p class=" text-page9">
+                        نمونه بردارى با سرعت بالا 1 1.250ms میلى ثانيه برای (TG) 5 ميلى ثانيه 10 میلى ثانيه, 50 ميلى
+                        ثانيه.100 میلى ثانيه يا 150 میلى ثانيه رامى نوان درسه
+                        مرحله تنظيم كرد.</p>
+
+                    <h4 class="distanse-page9"><span class="red-lozy">◆</span><span>تست ها و نتایج اضافی را میتوان
+                            دوباره سفارش داد.</span>
+                    </h4>
+
+                    <h4 class="distanse-page9"><span class="red-lozy">◆</span><span>حالت تست كنترل به كاربر اجازه مى دهد
+                            تا كنترل را براى
+                            حداكثر 20 تست، از
+                            جمله تست خزش، تست آرامش وتست بار خودكار، برنامه ريزى كند. شرايط
+                            كنترل نيز مى تواند توسط كاربر براى تست خزش، تست آرامش وتست بار
+                            خودكار ايجاد شود.</span></h4>
+
+                    <h4 class="distanse-page9"><span class="red-lozy">◆</span><span>از تست فنر واسفنج يشتيبانى مى كند.
+                            امكان تست استاندارد
+                            ارتفاع و ضخامت را فراهم مى
+                            كند.</span></h4>
+
+                    <h4 class="distanse-page9"><span class="red-lozy">◆</span><span>كاربران می توانند از رابط انگليسى
+                            وژاپنى انتخاب
+                            كنند.</span></h4>
+                    <h4 class="distanse-page9"><span class="blue-circle">●</span><span class="dark-blue-page9">سیستم
+                            مورد نیاز</span></h4>
+                    <p class=" text-page9">・سیستم عامل های سازگار: ویندوز 7، ویندوز 10 <br>
+                        ・پردازنده: پردازنده پنتیوم اینتل سرعت ساعت 2 گیگاهرتز یا بیشتر<br>
+                        ・حافظه: 2 گیگابایت یا بیشتر<br>
+                        ・درایو CD / DVD: حداقل یک<br>
+                        ・پورت USB: برای مدل نمونه گیری استاندارد<br>
+                        ・پورت سریال: برای مدل نمونه برداری با سرعت بالا (TGI / TGE)<br>
+                        * ویندوز یک علامت تجاری ثبت شده از شرکت مایکروسافت در ایالات متحده امریکا و کشورهای دیگر است.
+                    </p>
+                    <h4 class="distanse-page9"><span class="blue-circle">●</span><span class="dark-blue-page9">مشخصات
+                            فنی</span></h4>
+                    <p class=" text-page9 smallfont">1)انواع تست: كشش.فشار، خمش 3-/4 نقطه، لايه بردارى</p>
+                    <p class=" text-page9 smallfont">2)حالت هاى تست: تك(كشش، فشارى، حمش 3-/4 نقطه، لايه بردارى، خزش، بار خودكار)
+                        <br> چرخه(كششى، فشرده
+                        سازى، خمش 3-/4 نقطه) (اختيارى) كنتزل (كششى،
+                        فشرده سازى، خمش 3-/4 نقطه، خزش، آرامش، بار خودكار) (اختيارى)</p>
+                    <p class=" text-page9 smallfont">3)حداكثر ظرفیت تست: 100 دسته، 100 دسنه فرعى (حداكتر 10000 تست درهر فايل)
+                        * تست چرخه در 1 دسته: 6 دسته فرعى ثابت شد.</p>
+                    <p class=" text-page9 smallfont">4)فاصله نمونه بردارى: استاندارد10 ميلى ثانيه نا 10 ساعت (هدكام ارتباط USB. از
+                        30 ميلي ثانيه براى
+                        TGI/TGE) سرعت
+                        بالا1 ميلى ثانيه (1.25 ميلى ثانيه براى (TG) ~ 150 ميلى ثانيه)</p>
+                    <p class=" text5-page9 smallfont">5)موارد تجزیه و تحلیل: کششی، فشرده سازی، ازمون خمش 3/ 4 نقطه ای
+                        منشا جابجایی، مدول الاستیک (استاندارد، اکورد، گرادیان)، قله،
+                        نقطه پارگی، نقطه عملکرد بالا، نقطه عملکرد پایین، نقطه قدرت عملکرد،
+                        نقطه میانی (6 امتیاز هر کدام برای نیروی ازمون و جابجایی)،
+                        انرژی، مقاومت کششی اولیه، [n] مقدار، طول پارگی تست پوست
+                        منشاء جابجایی، نقطه اوج 1، نقطه پایین 1، حداکثر اوج
+                        نقطه، حداقل نقطه پایین، نقطه متوسط (1 تا 6 امتیاز)،
+                        نقطه نیروی ازمون متوسط (1 تا 6 امتیاز)، میانگین ازمون متوسط
+                        نقطه نیرو (2 تا 6 امتیاز)، قدرت پارگی،
+                        انتگرال / ساده / قله / پایین / قله و پایین / قله بزرگ و کوچک 6 نقطه
+                        میانگین، ضریب استاتیک/دینامیک اصطکاک، میانگین جمع اوری نست چرخه
+                        مبداجابجائى، حداكثر نقطه، حداقل نقطه، حداكثر نقطه بازگشت، حداقل نقطه
+                        بازگشت،نقطه ميانى (هر كدام 6 امتياز براى نيروی آزمايش وجابجایى)، انرژى (
+                        افزايش/كاهش، مثبت/منفى، چرخه)، پسماند، كاهش پسماند، ازدياد طول
+                        باقي مانده
+                    </p>
+                    <p class=" text-page9 smallfont">6)سایر عملکردها: شرايط تست شروع سريع، چرخه مقدماتى، لفو نيروى آزمايش خودكار،
+                        عملكرد
+                        تشخيص نقطه اصلى</p>
+                    </div>
+
+                <div class="page3 page1 fontsize">
+                    <img src="/public/img/page9.png" class="page9-img">
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    </body>
+
+</html>
